@@ -2,7 +2,17 @@ package mbc.ceilingFan;
 
 import java.util.Scanner;
 
+/**
+ * Main - The main class of the program.
+ * @author Greg Shalay
+ *
+ */
 public class Main {
+	
+	/**
+	 * main --- The main program loop. 
+	 * @param args - The array of command-line arguments.
+	 */
 	public static void main(String[] args) {
 		boolean wantsExit = false;
 		Fan ceilingFan = new Fan();

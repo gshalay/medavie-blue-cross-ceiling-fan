@@ -1,5 +1,10 @@
 package mbc.ceilingFan;
 
+/**
+ * Fan --- The class that contains the framework for the fan in the simulation.
+ * @author Greg Shalay
+ *
+ */
 public class Fan {
 	// true = "clockwise rotation", false = "counter-clockwise rotation" 
 	private boolean isRotatingClockwise;
@@ -7,6 +12,9 @@ public class Fan {
 	
 	private final int MAX_SPEED = 3;
 	
+	/**
+	 * Fan Constructor
+	 */
 	public Fan() {
 		super();
 		
@@ -14,6 +22,9 @@ public class Fan {
 		isRotatingClockwise = true;
 	}
 	
+	/**
+	 * incrementSpeed --- Increases speed by one, if speed becomes more than the max, it is reset to 0.
+	 */
 	protected void incrementSpeed() {
 		currentSpeed++;
 		
@@ -22,10 +33,16 @@ public class Fan {
 		}
 	}
 	
+	/**
+	 * reverseRotation --- Changes the rotation flag to the opposite of what it was originally set to.
+	 */
 	protected void reverseRotation() {
 		isRotatingClockwise = !isRotatingClockwise;
 	}
 	
+	/**
+	 * printState --- Builds and prints the output string containing the state information of the ceiling fan.
+	 */
 	protected void printState() {
 		String state = "Fan speed: " + currentSpeed;
 		
